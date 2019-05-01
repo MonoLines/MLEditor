@@ -70,6 +70,7 @@
         "after": true
       }
     ],
-    "eqeqeq": 1
+    "eqeqeq": 1,
+    "linebreak-style": [1, "LF"]
   }
 }
