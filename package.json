@@ -1,5 +1,5 @@
 {
-  "name": "@monolines/editor",
+  "name": "@monolines/rich-editor",
   "version": "0.0.1",
   "scripts": {
     "dev": "webpack --mode development",

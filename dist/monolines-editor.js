@@ -100,10 +100,43 @@ return /******/ (function(modules) { // webpackBootstrap
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-console.log("Hi monolines!");
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _rich_editor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./rich-editor */ "./src/rich-editor.js");
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  RichEditor: _rich_editor__WEBPACK_IMPORTED_MODULE_0__["default"]
+});
+
+/***/ }),
+
+/***/ "./src/rich-editor.js":
+/*!****************************!*\
+  !*** ./src/rich-editor.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RichEditor; });
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+var RichEditor = function RichEditor(selector, options) {
+  _classCallCheck(this, RichEditor);
+
+  console.log("selector", selector);
+  console.log("options", options);
+};
+
+
 
 /***/ })
 
