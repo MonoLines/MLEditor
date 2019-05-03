@@ -91,51 +91,48 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/index.js":
+/***/ "./src/index.ts":
 /*!**********************!*\
-  !*** ./src/index.js ***!
+  !*** ./src/index.ts ***!
   \**********************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _rich_editor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./rich-editor */ "./src/rich-editor.js");
 
-/* harmony default export */ __webpack_exports__["default"] = ({
-  RichEditor: _rich_editor__WEBPACK_IMPORTED_MODULE_0__["default"]
-});
+Object.defineProperty(exports, "__esModule", { value: true });
+var rich_editor_1 = __webpack_require__(/*! ./rich-editor */ "./src/rich-editor.ts");
+// import RichEditor from './rich-editor';
+exports.default = {
+    RichEditor: rich_editor_1.default
+};
+
 
 /***/ }),
 
-/***/ "./src/rich-editor.js":
+/***/ "./src/rich-editor.ts":
 /*!****************************!*\
-  !*** ./src/rich-editor.js ***!
+  !*** ./src/rich-editor.ts ***!
   \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RichEditor; });
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
 
-var RichEditor = function RichEditor(selector, options) {
-  _classCallCheck(this, RichEditor);
-
-  console.log("selector", selector);
-  console.log("options", options);
-};
-
+Object.defineProperty(exports, "__esModule", { value: true });
+var RichEditor = /** @class */ (function () {
+    function RichEditor(selector, options) {
+        console.log("selector", selector);
+        console.log("options", options);
+    }
+    return RichEditor;
+}());
+exports.default = RichEditor;
 
 
 /***/ })

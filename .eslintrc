@@ -1,8 +1,12 @@
 {
   "extends": "eslint:recommended",
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
   "parserOptions": {
     "sourceType": "module",
-    "ecmaVersion": 2018
+    "ecmaVersion": 2018,
+    "project": "./tsconfig.json",
+    "tsconfigRootDir": "."
   },
   "rules": {
     "semi": [
@@ -71,6 +75,6 @@
       }
     ],
     "eqeqeq": 1,
-    "linebreak-style": [1, "LF"]
+    "linebreak-style": [1, "unix"]
   }
 }

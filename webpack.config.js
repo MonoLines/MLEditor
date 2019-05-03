@@ -1,28 +1,20 @@
-const {
-  resolve
-} = require('path');
+const {resolve} = require('path');
 const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = (env, {
   mode
 }) => ({
-  entry: resolve(__dirname, 'src', 'index.js'),
+  entry: resolve(__dirname, 'src', 'index.ts'),
   target: 'web',
   devtool: 'none',
+  resolve: {
+    extensions: ['.ts', '.js'],
+  },
   module: {
     rules: [{
-      test: /\.js$/,
-      use: 'babel-loader',
-      exclude: /node_modules/
-    },  {
-      test: /\.js$/,
+      test: /\.ts$/,
       include: [resolve(__dirname, 'src')],
-      use: [{
-        loader: 'babel-loader',
-        options: {
-          presets: ['@babel/preset-env']
-        }
-      }]
+      loader: 'ts-loader'
     }]
   },
   output: {
